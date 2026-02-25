@@ -1,0 +1,50 @@
+# Entorno y configuración sensible
+.env
+php.ini
+
+# Dependencias de composer
+vendor/
+
+# Archivos temporales y de caché
+temp/
+/temp
+*.tmp
+*.cache
+
+# Archivos de subida de usuarios (si los hay)
+uploads/
+/uploads
+
+# Reportes generados
+reportes/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de log
+*.log
+/logs
+
+# Archivos zip o comprimidos (backups locales)
+*.zip
+*.rar
+*.gz
+*.tar
+
+# Archivos SQL de importación (no subir al repo)
+*.sql
+
+# Node modules (si hay frontend)
+node_modules/
+
+# Archivos específicos a ignorar
+do.php.zip
+z__________03yuliServicioTecnicoProd

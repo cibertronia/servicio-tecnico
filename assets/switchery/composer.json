@@ -1,0 +1,19 @@
+{
+    "name": "gaomingcode/switchery",
+    "description": "iOS 7 style switches for your checkboxes.",
+    "type": "library",
+    "license": [
+        "MIT"
+    ],
+    "keywords": [
+        "switchery"
+    ],
+    "homepage": "http://abpetkov.github.io/switchery/",
+    "minimum-stability": "stable",
+    "prefer-stable": true,    
+    "authors": [
+        {
+        "name": "Alexander Petkov"
+        }
+    ]
+}

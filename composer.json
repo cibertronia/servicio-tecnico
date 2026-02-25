@@ -1,0 +1,36 @@
+{
+	"name": "lodev09/smartadmin-php",
+	"version": "4.6.0",
+	"description": "SmartAdmin PHP",
+	"autoload": {
+		"psr-4": {
+			"Common\\": "lib/common",
+			"Models\\": "lib/models",
+			"App\\": "lib/app",
+			"API\\": "lib/api",
+			"Bootstrap\\Components\\": "lib/components"
+		}
+	},
+	"require": {
+		"fightbulc/moment": "^1.32",
+		"lodev09/bootstrap-php": "^1.1",
+		"lodev09/php-util": "^2.0",
+		"lodev09/php-models": "^2.2",
+		"lodev09/php-upload": "^1.1",
+		"phpmailer/phpmailer": "^6.0",
+		"fakerphp/faker": "^1.13",
+		"vlucas/phpdotenv": "^3.3",
+		"erusev/parsedown": "^1.7",
+		"slim/slim": "4.*",
+		"hybridauth/hybridauth": "^3.2",
+		"slim/psr7": "^1.2",
+		"mobiledetect/mobiledetectlib": "^2.8",
+		"php-di/php-di": "^6.3",
+		"monolog/monolog": "^2.2",
+		"twilio/sdk": "^6.16",
+		"pelago/emogrifier": "^5.0",
+		"mpdf/mpdf": "^8.0",
+		"gaomingcode/switchery": "^0.8.2",
+		"phpoffice/phpspreadsheet": "^1.15"
+	}
+}

@@ -1,0 +1,52 @@
+.lineaNaranja{
+		margin-bottom: 15px;
+		border:none;
+		background:#FF5722;
+		padding:0cm 2.0pt 0cm 2.0pt;
+  	height:18.0pt
+	}
+	.reciboTitulo{
+		width: 100%;
+		text-align: right;
+	}
+	.logo{
+		/*padding-top: 25px;*/
+		text-align: center;
+	}
+	/*.reciboTitulo{
+		text-align: right;
+		font-size: 28px;
+		padding-right: 25px;
+	}*/
+	.seccion1{
+		width: 65%;
+		margin: auto;
+	}
+	.fecha{
+		text-align: left;
+	}
+	.lineaSimbolo{
+		text-align: right;
+	}
+	.simbolo{
+		font-size: 28px;
+	}
+	.cantidadNumeros{
+		border: solid 1px red;
+		border-collapse: collapse;
+		padding-top: 10px;
+		font-size: 28px;
+	}.seccionFecha{
+		text
+	}
+	.seccion2{
+		padding-top: 15px;
+	}
+	.seccion3{
+		text-align: center;
+		padding-bottom: 25px;
+	}
+	.lineaFirma{
+		margin: auto;
+		text-align: center;
+	}

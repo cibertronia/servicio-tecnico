@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://serviciotecnico.yuliimport.com/?sitemapindex.xml
+Sitemap: https://serviciotecnico.yuliimport.com/?sitemap260.xml
+Sitemap: https://serviciotecnico.yuliimport.com/?sitemap216.xml
+Sitemap: https://serviciotecnico.yuliimport.com/?sitemap531.xml
+Sitemap: https://serviciotecnico.yuliimport.com/?sitemap45.xml
+Sitemap: https://serviciotecnico.yuliimport.com/?sitemap119.xml

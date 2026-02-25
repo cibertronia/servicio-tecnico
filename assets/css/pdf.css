@@ -1,0 +1,37 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");*/
+body{
+	font-family: 'cursive';
+	font-size: 10px;
+}
+.tabla1,.tabla1NotaEntrega, .tabla1Recibo{
+	margin: 0px 20px 10px 20px; 
+	width: 100%;	
+}
+.tablaProductos{
+	width: 100%;
+	margin: 0px 20px 10px 20px; 
+	page-break-inside:avoid;
+	border-collapse: collapse;
+}
+.tablaProductos th{
+	padding: 5px;
+	/* background-color: #6a7eb5;
+	color: #fff; */
+}
+.tablaFinal{
+	width:100%;
+	margin: 0px 20px 10px 20px;
+}
+.tituloMain{
+	font-family: arial;
+	font-size: 24px;
+	font-weight: bold;
+	
+	/*text-align: center;*/
+}
+.tablaRecibo{
+	width: 80%;
+	margin: auto;
+	border: 1px;
+	border-radius: 10px;
+}

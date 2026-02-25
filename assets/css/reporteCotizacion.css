@@ -1,0 +1,57 @@
+body{
+	font-size: 12px;
+	/*font-family: calibri;*/
+}
+.w-95{
+	width: 95%;
+	margin: auto;
+	
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.t-productos{
+	margin-bottom: 2.5%;
+}
+.pt-10{
+	padding-top: 10px;
+}
+.pt-20{
+	padding-top: 20px;
+}
+.pl-3{
+	padding-left: 3px;
+}
+.pl-10{
+	padding-left: 10px;
+}
+.p-auto{
+	padding: auto;
+}
+.p-5{
+	padding: 5px;
+}
+.p-10{
+	padding: 10px;
+}
+.mt-10{
+	margin-top: 10px;
+}
+.mb-5{
+	margin-bottom: 5px;
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+.bg-success{
+	background-color: #e2efd9;
+}
+.text-white{
+	color: #fff;
+}

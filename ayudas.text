@@ -1,0 +1,17 @@
+$('#mySelect2').select2({
+  dropdownParent: $('#myModal')
+});
+
+<select data-tags="true" data-placeholder="Select an option" data-allow-clear="true">
+    ...
+</select>
+
+$("select").select2({
+  tags: "true",
+  placeholder: "Select an option",
+  allowClear: true
+});
+
+$(".js-example-responsive").select2({
+    width: 'resolve' // need to override the changed default
+});
