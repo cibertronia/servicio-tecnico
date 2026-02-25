@@ -1,4 +1,6 @@
 <?php
+// Suppress deprecated warnings from 3rd party libraries (Moment.php) on PHP 8+
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED);
 require_once ROOT_PATH.'/vendor/autoload.php';
 /*$dirs = ['tmp', 'cache', 'logs', 'archive'];
 foreach ($dirs as $dir) {
