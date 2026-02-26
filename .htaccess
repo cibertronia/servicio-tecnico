@@ -1,9 +1,22 @@
 DirectoryIndex index.php index.html
+
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+    RewriteEngine On
+
+    # Detectar RewriteBase automaticamente segun la ruta del script
+    RewriteCond %{REQUEST_URI}::$1 ^(/.+)(.+)::\2$
+    RewriteRule ^(.*) - [E=BASE:%1]
+
+    # Evitar bucle infinito: no redirigir si ya fue reescrito
+    RewriteCond %{ENV:REDIRECT_STATUS} ^$
+
+    # No reescribir archivos o directorios que existen fisicamente
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Redirigir todo al index.php en la misma carpeta (compatible con subdirectorio)
+    RewriteRule ^ index.php [QSA,L]
 </IfModule>
+
+# Opciones de seguridad
+Options -Indexes
