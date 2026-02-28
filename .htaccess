@@ -20,3 +20,4 @@ DirectoryIndex index.php index.html
 
 # Opciones de seguridad
 Options -Indexes
+

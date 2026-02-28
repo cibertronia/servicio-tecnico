@@ -35,7 +35,7 @@ $(function() {
 			$(".btnChangePswd").addClass('d-none');
 			$(".spinner-btnChangePswd").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#changPswd").serialize(),
@@ -86,7 +86,7 @@ $(function() {
       $(".updateDatos").addClass('d-none');
       $(".spinner").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         contentType: false,
         processData: false,

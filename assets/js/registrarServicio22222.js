@@ -106,7 +106,7 @@ $(function () {
 			$("#btnMasCampos").addClass('d-none');
 			$(".spinnerMasCampos").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: datosPOST,
@@ -206,7 +206,7 @@ $(function () {
 			$(".spinnerContinuar").removeClass('d-none');
 			$(".respuesta").html('');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#registrarServicio").serialize(),			//datosPOST,
@@ -258,7 +258,7 @@ $(function () {
 			$(".guardaServicio").addClass('d-none');
 			$(".spinner").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#registrarServicio").serialize(),
@@ -294,7 +294,7 @@ $(function () {
 	.then(function(result){
 	  if (result.value){
 		$.ajax({
-		  url: 'do.php',
+		  url: 'puerta_ajax.php',
 		  type: 'POST',
 		  dataType: 'html',
 		  data: "action=BorrarServicio_clave&idClave="+idClave,

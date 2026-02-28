@@ -39,7 +39,7 @@ $(function() {
       $(".btnRegistrarNuevoCliente").addClass('d-none');
       $(".spinner").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#formAddNuevoCliente").serialize(),
@@ -95,7 +95,7 @@ $(function() {
       $(".btnActualizarCliente").addClass('d-none');
       $(".spinner-ActualizarCliente").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#formEditCliente").serialize(),

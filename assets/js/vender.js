@@ -284,7 +284,7 @@ $(function() {
 			$(".btnActualizarProducto").addClass('d-none');
 			$(".spinner-ActualizarProducto").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formEditProducto").serialize(),
@@ -307,7 +307,7 @@ $(function() {
 		var idClave 	= $(this).attr('id');
 		var claveTemp = $("#claveTemporal").val();
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			dataType: 'html',
 			data: "action=borrarProductoTemporalFactura&idClave="+idClave+"&claveTemporal="+claveTemp,
@@ -317,7 +317,7 @@ $(function() {
 			$(".tablaProductosTemporales").html(data);
 		})
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			dataType: 'html',
 			data: "action=borrarProductoTemporalFacturaView&claveTemporal="+claveTemp,
@@ -395,7 +395,7 @@ $(function() {
 			$(".labelBtn").remove();
 			$(".spinner-masProductos").after('<label for="btn-masProductos" class="form-label labelBtn" style="letter-spacing: 2px;">Guardando producto...</label>');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: "action=GuardarProductoTemporalFactura&claveTemporal="+claveTemp+"&idProducto="+idProducto+"&cantidad="+cantidad+"&precioVenta="+precioVen+"&precioEspecial="+precioEsp,
@@ -417,7 +417,7 @@ $(function() {
 				$("#btn-masProductos").before('<label for="btn-masProductos" class="form-label labelBtn" style="letter-spacing: 2px;">&nbsp;&nbsp;</label>');
 			})
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: "action=GuardarProductoTemporalFacturaView&claveTemporal="+claveTemp,
@@ -522,7 +522,7 @@ $(function() {
 			$(".guardarCotizacion").addClass('d-none');
 			$(".spinner-guardarCotizacion").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#generarCotizacion").serialize(),

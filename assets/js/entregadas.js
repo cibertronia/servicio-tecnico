@@ -128,7 +128,7 @@ $(function() {
 			$(".guardarPago").addClass('d-none');
 			$(".spinner-guardarPago").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formularioVenta").serialize(),
@@ -154,7 +154,7 @@ $(function() {
       $(".actualizarNotaE").addClass('d-none');
       $(".spinner-actualizarNotaE").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#formNotaEntrega").serialize(),

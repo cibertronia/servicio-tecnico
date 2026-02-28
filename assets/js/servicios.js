@@ -17,7 +17,7 @@ $(function() {
     $("#monedaPrincipal option:selected").each(function(index, el) {
      var monedaPrincipal = $("#monedaPrincipal option:selected").val();
      $.ajax({
-       url: 'do.php',
+       url: 'puerta_ajax.php',
        type: 'POST',
        dataType: 'html',
        data: {action: 'cambiarMonedaPricipal',monedaPrincipal},
@@ -31,7 +31,7 @@ $(function() {
 		if ($(this).is(':checked')) {
 			$(".spinner_paginaRegistrar").removeClass('d-none');
 			$.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=HabilitarPaginaRegistro',
@@ -43,7 +43,7 @@ $(function() {
 		}else{
 			$(".spinner_paginaRegistrar").removeClass('d-none');
 			$.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=DeshabilitarPaginaRegistro',
@@ -58,7 +58,7 @@ $(function() {
 		if ($(this).is(':checked')) {
 			$(".spinner_precioDolar").removeClass('d-none');
 			$.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=HabilitarPrecioUSD',
@@ -70,7 +70,7 @@ $(function() {
 		}else{
 			$(".spinner_precioDolar").removeClass('d-none');
 			$.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=DeshabilitarPrecioUSD',
@@ -85,7 +85,7 @@ $(function() {
     if ($(this).is(':checked')) {
       $(".spinner_proveedores").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=HabilitarProveedores',
@@ -97,7 +97,7 @@ $(function() {
     }else{
       $(".spinner_proveedores").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=DeshabilitarProveedores',
@@ -112,7 +112,7 @@ $(function() {
     if ($(this).is(':checked')) {
       $(".spinner_categorias").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=HabilitarCategorias',
@@ -124,7 +124,7 @@ $(function() {
     }else{
       $(".spinner_categorias").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=DeshabilitarCategorias',
@@ -140,7 +140,7 @@ $(function() {
       
       $(".spinner_stock").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=HabilitarStock',
@@ -154,7 +154,7 @@ $(function() {
       $(".cardStockFooter").addClass('d-none');
       $(".spinner_stock").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: 'action=DeshabilitarStock',

@@ -16,7 +16,7 @@ $(function() {
 			$(".login").addClass('d-none');
 			$(".spinner").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#login").serialize(),

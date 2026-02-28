@@ -4,7 +4,7 @@
 	// $DB_PSWD = 'ES@72900968';
 	// $DB_NAME = 'suportyapa_sistemav3';
 
-	$DB_HOST = '167.86.108.223';
+	$DB_HOST = 'localhost';
 	$DB_USER = 'letimport_kuky';
 	$DB_PSWD = '.s=Kya+aD~yw';
 	$DB_NAME = 'letimport_servicioTecnico';

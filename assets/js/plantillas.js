@@ -61,7 +61,7 @@ $(function() {
 			$(".actualizarPlantilla").addClass('d-none');
 			$(".spinner-actualizarPlantilla").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formPlantilla").serialize(),
@@ -117,7 +117,7 @@ $(function() {
 			$(".guardarPlantilla").addClass('d-none');
 			$(".spinner-guardarPlantilla").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formPlantilla").serialize(),

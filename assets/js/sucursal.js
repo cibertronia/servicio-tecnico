@@ -26,7 +26,7 @@ $(function() {
 			$(".spinner-regNewSucursal").removeClass('d-none');
 			event.preventDefault();
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#registrarnuevaSucursal").serialize(),
@@ -76,7 +76,7 @@ $(function() {
 			$(".actualizarSucursal").addClass('d-none');
 			$(".spinner-actualizarSucursal").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#updateSucursal").serialize(),
@@ -118,7 +118,7 @@ $(function() {
 			    )
 		  	}else{
 		  		$.ajax({
-						url: 'do.php',
+						url: 'puerta_ajax.php',
 						type: 'POST',
 						dataType: 'html',
 						data: "action=DeshabilitarSucursal&idSucursal="+idSucursal,
@@ -144,7 +144,7 @@ $(function() {
 		event.preventDefault();
 		var idSucursal = $(this).attr("id");
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			dataType: 'html',
 			data: "action=HabilitarSucursal&idSucursal="+idSucursal,

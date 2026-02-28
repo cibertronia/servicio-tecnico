@@ -50,7 +50,7 @@ $(function() {
       $(".btnRegistrarNuevoCliente").addClass('d-none');
       $(".spinner-RegistrarNuevoCliente").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#formAddNuevoCliente").serialize(),
@@ -123,7 +123,7 @@ $(function() {
       $(".btnActualizarCliente").addClass('d-none');
       $(".spinner-ActualizarCliente").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#formEditCliente").serialize(),
@@ -167,7 +167,7 @@ $(function() {
       $(".TeleSend").addClass('d-none');
       $(".spinner-TeleSend").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#telesms").serialize(),

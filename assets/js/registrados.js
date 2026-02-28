@@ -167,7 +167,7 @@ $(function () {
 			$("#btnActualizaEq").addClass('d-none');
 			$(".spinnerActEq").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#updateThisEquipo").serialize(),
@@ -202,7 +202,7 @@ $(function () {
 		}).then((result) => {
 			if (result.value) {
 				$.ajax({
-					url: 'do.php',
+					url: 'puerta_ajax.php',
 					type: 'POST',
 					dataType: 'html',
 					data: "action=borrarEquipo_soporteClaves&idClave=" + idClave,
@@ -308,7 +308,7 @@ $(function () {
 			$("#btnMas_Campos").addClass('d-none');
 			$(".spinnerMasCampos").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: datosPOST,
@@ -366,7 +366,7 @@ $(function () {
 			$("#cancelaOrden").addClass('d-none');
 			$(".spinner").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formCancelaOrden").serialize(),
@@ -393,7 +393,7 @@ $(function () {
 			$("#cancelaEstaOrden").addClass('d-none');
 			$(".spinner").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formCancelaestaOrden").serialize(),
@@ -427,7 +427,7 @@ $(function () {
 		$("#guardaCostos").addClass('d-none');
 		$(".spinner").removeClass('d-none');
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			dataType: 'html',
 			data: $("#formCostosReparacion").serialize(),

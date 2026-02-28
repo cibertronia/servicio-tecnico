@@ -254,7 +254,7 @@ $(function () {
 			$(".btnActualizarProducto").addClass('d-none');
 			$(".spinner-ActualizarProducto").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formProducto").serialize(),
@@ -299,7 +299,7 @@ $(function () {
 		$(".spinner").removeClass('d-none');
 		$(".tooltip").hide();
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			data: formulario,
 			contentType: false,
@@ -341,7 +341,7 @@ $(function () {
 			}, 1500);
 		} else {
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formStockSucursal").serialize(),
@@ -371,7 +371,7 @@ $(function () {
 		var Form = new FormData($('#filesForm')[0]);
 		$.ajax({
 
-			url: "includes/recibir_excel_csv/recibe_excel_validando.php",
+			url: "includes/recibir_excel_csv/recibe_excel_validanpuerta_ajax.php",
 			type: "post",
 			dataType: 'json',
 			data: Form,

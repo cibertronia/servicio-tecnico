@@ -1,4 +1,4 @@
-Ôªø<?php
+<?php
 	include 'includes/conexion.php';
 	include 'includes/date.class.php';
 	mysqli_query($MySQLi,"SET lc_time_names= 'es_BO' ");
@@ -65,8 +65,8 @@
                                         <input type="text" name="fecha_poliza" id="fecha_poliza" class="form-control"
                                             placeholder="fecha_poliza" data-parsley-required="true">
                                         <div class="text-center text-danger d-none emptyProdModelo_">Campo Fecha Poliza
-                                            est√°
-                                            vac√≠o</div>
+                                            est·
+                                            vacÌo</div>
                                     </div>
 
 
@@ -74,8 +74,8 @@
                                         <label for="codigo">CODIGO</label>
                                         <input type="text" name="codigo" id="codigo" class="form-control"
                                             placeholder="codigo" data-parsley-required="true">
-                                        <div class="text-center text-danger d-none emptyProdModelo_">Campo Codigo est√°
-                                            vac√≠o</div>
+                                        <div class="text-center text-danger d-none emptyProdModelo_">Campo Codigo est·
+                                            vacÌo</div>
                                     </div>
                                 </div>
                                 <div class="row mt-3 ">
@@ -84,8 +84,8 @@
                                         <input type="hidden" name="idProducto" id="idProducto_">
                                         <input type="text" name="detalle" id="detalle" class="form-control"
                                             placeholder="detalle" data-parsley-required="true">
-                                        <div class="text-center text-danger d-none emptyProdNombre_">Campo Detalle est√°
-                                            vac√≠o</div>
+                                        <div class="text-center text-danger d-none emptyProdNombre_">Campo Detalle est·
+                                            vacÌo</div>
                                     </div>
 
                                     <div class="col">
@@ -93,8 +93,8 @@
                                         <input type="number" name="saldo_fisico" id="saldo_fisico" class="form-control"
                                             placeholder="SALDO FISICO" min="0" data-parsley-type="integer"
                                             data-parsley-required="true">
-                                        <div class="text-center text-danger d-none emptyProdModelo_">Campo modelo est√°
-                                            vac√≠o</div>
+                                        <div class="text-center text-danger d-none emptyProdModelo_">Campo modelo est·
+                                            vacÌo</div>
                                     </div>
                                 </div>
 
@@ -110,7 +110,7 @@
                                                     step="0.1">
                                                 <div class="text-center text-danger d-none emptyStockCB">Campo C/U PARA
                                                     FACTURAR MINIMO
-                                                    est√° vac√≠o</div>
+                                                    est· vacÌo</div>
                                             </div>
 
                                             <div class="col">
@@ -120,7 +120,7 @@
                                                     id="importes_para_facturar" class="form-control" min="0" step="0.1"
                                                     placeholder="importes_para_facturar">
                                                 <div class="text-center text-danger d-none emptyPrecioCB_">Campo
-                                                    IMPORTES PARA FACTURAR vac√≠o</div>
+                                                    IMPORTES PARA FACTURAR vacÌo</div>
                                             </div>
                                         </div>
                                     </div>
@@ -149,7 +149,7 @@
                                     DE
                                     PRODUCTOS FISCALES</span></h4>
                             <div class="panel-heading-btn">
-                                <form action="./../includes/recibe_excel_validando.php" method="POST"
+                                <form action="./../includes/recibe_excel_validanpuerta_ajax.php" method="POST"
                                     enctype="multipart/form-data" id="filesForm">
                                     <span class="btn btn-success fileinput-button">
                                         <i class="fa fa-file"><span id="imgName">&nbsp; SELECCIONAR ARCHIVO EXCEL</span>

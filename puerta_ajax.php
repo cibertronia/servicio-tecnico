@@ -1754,10 +1754,10 @@ switch ($Acciones) {
                     if (isset($_SESSION['idUser'])) {
                         $idUser = $_SESSION['idUser'];
                         $clave = $_POST['clave'];
-                        $realizado = $_POST['realizado'];
-                        $realizados = count($_POST['realizado']);
-                        $costos = $_POST['costo'];
-                        $idClaves = $_POST['idClave'];
+                        $realizado = isset($_POST['realizado']) ? $_POST['realizado'] : array();
+                        $realizados = is_array($realizado) ? count($realizado) : 0;
+                        $costos = isset($_POST['costo']) ? $_POST['costo'] : array();
+                        $idClaves = isset($_POST['idClave']) ? $_POST['idClave'] : array();
                         $sucursal = $_POST['sucursal'];
                         // if ($sucursal == 'Cochabamba') {
                         //     $dataBase = "soporte_cba";
@@ -1981,9 +1981,9 @@ switch ($Acciones) {
                         $idSucursal = $_POST['idSucursal'];
                         $clave = $_POST['clave'];
                         //estos son array
-                        $Costos = $_POST['costo'];
-                        $idClaves = $_POST['idClave'];
-                        $Realizar = $_POST['realizar'];
+                        $Costos = isset($_POST['costo']) ? $_POST['costo'] : array();
+                        $idClaves = isset($_POST['idClave']) ? $_POST['idClave'] : array();
+                        $Realizar = isset($_POST['realizar']) ? $_POST['realizar'] : array();
                         /********************************/
                         $cantIDS = count($idClaves);
                         for ($i = 0; $i < $cantIDS; $i++) {

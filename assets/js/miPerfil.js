@@ -36,7 +36,7 @@ $(function() {
 			$(".btnChangePswd").addClass('d-none');
 			$(".spinner-btnChangePswd").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#changPswd").serialize(),
@@ -72,7 +72,7 @@ $(function() {
       $(".updateDatos").addClass('d-none');
       $(".spinner-updateDatos").removeClass('d-none');
       $.ajax({
-      	url: 'do.php',
+      	url: 'puerta_ajax.php',
       	type: 'POST',
       	dataType: 'html',
       	data: $("#actualizaDatos").serialize(),
@@ -102,7 +102,7 @@ $(function() {
 			var idUser= $("#idUserHidden").val();*/
 			var formulario = new FormData($("#miAvatar")[0]);
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				data: formulario,
 				contentType: false,

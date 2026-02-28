@@ -27,7 +27,7 @@ $(function() {
 		}).then((result) => {
 		  if (result.value) {
 		  	$.ajax({
-					url: 'do.php',
+					url: 'puerta_ajax.php',
 					type: 'POST',
 					dataType: 'html',
 					data: "action=RestaurarOredenSoporte&idClave="+idClave,

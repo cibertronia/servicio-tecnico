@@ -254,7 +254,7 @@ $(function() {
       $(".upDispo").addClass('d-none');
       $(".up_Dispo").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#infoDispo").serialize(),
@@ -421,7 +421,7 @@ $(function() {
     $(".guardaDotosDispo").addClass('d-none');
     $(".spinner").removeClass('d-none');
     $.ajax({
-      url: 'do.php',
+      url: 'puerta_ajax.php',
       type: 'POST',
       dataType: 'html',
       data: $("#datosDispositivo").serialize(),
@@ -476,7 +476,7 @@ $(function() {
       $(".btn-tel"+idTelefono).addClass('d-none');
       $(".edit"+idTelefono).removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: "action=UpPhoneDispo&idTelefono="+idTelefono+"&pais="+pais+"&telefono="+telefono+"&origen="+origen,

@@ -72,7 +72,7 @@ $(function() {
       $(".spinner-regNewUser").removeClass('d-none');
       $("#openModaladdUsuario").modal('hide');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#registrarnuevoUsuario").serialize(),
@@ -121,7 +121,7 @@ $(function() {
     .then(function(result){
       if (result.value){
         $.ajax({
-          url: 'do.php',
+          url: 'puerta_ajax.php',
           type: 'POST',
           dataType: 'html',
           data: "action=HabilitarCuentaUsuario&idUser="+idUser,
@@ -157,7 +157,7 @@ $(function() {
       $(".btnCancelarCuenta").addClass('d-none');
       $(".spinner").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#cancelarCuentaUsuario").serialize(),
@@ -198,7 +198,7 @@ $(function() {
       $(".TeleSend").addClass('d-none');
       $(".spinner").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#telesms").serialize(),
@@ -274,7 +274,7 @@ $(function() {
       $(".btnUpdateUser").addClass('d-none');
       $(".spinner-btnUpdateUser").removeClass('d-none');
       $.ajax({
-        url: 'do.php',
+        url: 'puerta_ajax.php',
         type: 'POST',
         dataType: 'html',
         data: $("#actualizarUsuario").serialize(),
@@ -309,7 +309,7 @@ $(function() {
     .then(function(result){
       if (result.value){
         $.ajax({
-          url: 'do.php',
+          url: 'puerta_ajax.php',
           type: 'POST',
           dataType: 'html',
           data: 'action=HabilitarPaginaRegistro',
@@ -348,7 +348,7 @@ $(function() {
     .then(function(result){
       if (result.value){
         $.ajax({
-          url: 'do.php',
+          url: 'puerta_ajax.php',
           type: 'POST',
           dataType: 'html',
           data: 'action=DeshabilitarPaginaRegistro',
@@ -387,7 +387,7 @@ $(function() {
     .then(function(result){
       if (result.value){
         $.ajax({
-          url: 'do.php',
+          url: 'puerta_ajax.php',
           type: 'POST',
           dataType: 'html',
           data: 'action=DeshabilitarPrecioUSD',
@@ -426,7 +426,7 @@ $(function() {
     .then(function(result){
       if (result.value){
         $.ajax({
-          url: 'do.php',
+          url: 'puerta_ajax.php',
           type: 'POST',
           dataType: 'html',
           data: 'action=HabilitarPrecioUSD',

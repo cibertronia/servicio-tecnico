@@ -48,7 +48,7 @@ $(function() {
 			return false;
 		}
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			dataType: 'Html',
 			data: $(this).serialize(),

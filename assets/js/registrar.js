@@ -41,7 +41,7 @@ $(document).ready(function() {
 			$(".registrarCuenta").addClass('d-none');
 			$(".spinner").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#registrar").serialize(),

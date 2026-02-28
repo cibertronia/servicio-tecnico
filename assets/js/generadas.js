@@ -49,7 +49,7 @@ $(function() {
 		$("#panelEditarCot").removeClass('d-none');
 		selectorProductos();
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			dataType: 'html',
 			data: {action:'mostrarProductosTemporales', claveCotizacion},
@@ -109,7 +109,7 @@ $(function() {
 		});
 		setTimeout(function() {
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: {action:'enviarCotizacionxCorreo',correoCliente,idCotizacion,asunto,mensaje,idTienda},
@@ -153,7 +153,7 @@ $(function() {
 			    )
 		  	}else{
 		  		$.ajax({
-				    url: 'do.php',
+				    url: 'puerta_ajax.php',
 				    type: 'POST',
 				    dataType: 'html',
 				    data: "action=borrarCotizacionGenerada&idCotizacion="+idCotizacion+"&clave="+ClaveCotiza,
@@ -195,7 +195,7 @@ $(function() {
 		}).then((result) => {
 		  if (result.value) {
 				$.ajax({
-					url: 'do.php',
+					url: 'puerta_ajax.php',
 					type: 'POST',
 					dataType: 'html',
 					data: {action: 'marcarComoEntregada',idCotizacion},
@@ -321,7 +321,7 @@ $(function() {
 			$(".btnActualizarProducto").addClass('d-none');
 			$(".spinner-ActualizarProducto").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#formEditProducto").serialize(),
@@ -346,7 +346,7 @@ $(function() {
 		$(".borrarProductoTemporal").remove()
 		$(".spinner-borrarProductoTemp_"+idClave+"").removeClass('d-none')
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			dataType: 'html',
 			data: "action=borrarProductoTemporal&idClave="+idClave+"&claveTemporal="+claveTemp,
@@ -410,7 +410,7 @@ $(function() {
 			$(".labelBtn").remove();
 			$(".spinner-masProductos").after('<label for="btn-masProductos" class="form-label labelBtn" style="letter-spacing: 2px;">Guardando producto...</label>');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: "action=GuardarProductoTemporal&claveTemporal="+claveTemp+"&idProducto="+idProducto+"&cantidad="+cantidad+"&precioVenta="+precioVen+"&precioEspecial="+precioEsp,
@@ -527,7 +527,7 @@ $(function() {
 			$(".guardarCotizacion").addClass('d-none');
 			$(".spinner-guardarCotizacion").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: {action:'ActualizarDatosCotizacion',claveTemporal,formaPago,tiempoEntrega,validezCotizacion,detallesGarantia,observaciones}

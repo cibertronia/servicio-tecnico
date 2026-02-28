@@ -65,7 +65,7 @@ $(function() {
 			$(".delServicio").tooltip('hide');
 		  if (result.value) {
 		  	$.ajax({
-			    url: 'do.php',
+			    url: 'puerta_ajax.php',
 			    type: 'POST',
 			    dataType: 'html',
 			    data: "action=deleteFichaTecnica&idServicio="+idServicio,
@@ -108,7 +108,7 @@ $(function() {
 			$(".delServicio").tooltip('hide');
 		  if (result.value) {
 		  	$.ajax({
-			    url: 'do.php',
+			    url: 'puerta_ajax.php',
 			    type: 'POST',
 			    dataType: 'html',
 			    data: "action=cancelarReparacion&idServicio="+idServicio,
@@ -170,7 +170,7 @@ $(function() {
 			$(".actualizaServicio").addClass('d-none');
 			$(".spinner").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#actuzalizarServicio").serialize(),
@@ -196,7 +196,7 @@ $(function() {
 			$(".guardaDetalles").addClass('d-none');
 			$(".spinner").removeClass('d-none');
 			$.ajax({
-				url: 'do.php',
+				url: 'puerta_ajax.php',
 				type: 'POST',
 				dataType: 'html',
 				data: $("#agregarReparaciones").serialize(),
@@ -236,7 +236,7 @@ $(function() {
 		$(".guardaDetalles").addClass('d-none');
 		$(".spinnerDetalles").removeClass('d-none');
 		$.ajax({
-			url: 'do.php',
+			url: 'puerta_ajax.php',
 			type: 'POST',
 			dataType: 'html',
 			data: $("#detallesRep").serialize(),

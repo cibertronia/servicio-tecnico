@@ -238,7 +238,7 @@
         $(document).ready(function() {
             $("#uppTempl").submit(function(){
                 $.ajax({
-                    url: 'do.php',
+                    url: 'puerta_ajax.php',
                     type: 'POST',
                     data: $(uppTempl).serialize(),
                 })
@@ -269,7 +269,7 @@
                 event.preventDefault();
                 var idPlantilla = $(this).attr("id");
                 $.ajax({
-                    url: 'do.php',
+                    url: 'puerta_ajax.php',
                     type: 'POST',
                     dataType: 'html',
                     data: "action=borrarPlantilla&id="+idPlantilla,
@@ -307,7 +307,7 @@
             });
             $("#save_template").submit(function() {
                 $.ajax({
-                    url: 'do.php',
+                    url: 'puerta_ajax.php',
                     type: 'POST',
                     dataType: 'html',
                     data: $(save_template).serialize(),
